@@ -34,7 +34,7 @@
                     Notre catalogue couvre les secteurs clés en forte demande. Grâce à notre pédagogie immersive (70% de pratique), soyez immédiatement opérationnel(le).
                 </p>
                 <div class="domain-grid">
-                    <div class="domain-card">
+                    <div class="domain-card" onclick="document.getElementById('elec-detail').scrollIntoView({behavior: 'smooth'})" style="cursor:pointer;">
                         <img src="domain_elec.png" class="domain-img" alt="Électricité">
                         <h3>Électricité</h3>
                         <p>Participez à la transition énergétique (+28% de besoins en compétences). Habilitations et perfectionnement.</p>
@@ -43,7 +43,7 @@
                             <li>Taux d'insertion : 96,1%</li>
                         </ul>
                     </div>
-                    <div class="domain-card">
+                    <div class="domain-card" onclick="document.getElementById('hr-detail').scrollIntoView({behavior: 'smooth'})" style="cursor:pointer;">
                         <img src="domain_hr.png" class="domain-img" alt="Commerce & RH">
                         <h3>Commerce & RH</h3>
                         <p>Des compétences métiers indispensables : management des talents, paie, et force de vente stratégique.</p>
@@ -52,7 +52,7 @@
                             <li>Évolution de carrière : 74%</li>
                         </ul>
                     </div>
-                    <div class="domain-card">
+                    <div class="domain-card" onclick="document.getElementById('it-detail').scrollIntoView({behavior: 'smooth'})" style="cursor:pointer;">
                         <img src="domain_it.png" class="domain-img" alt="Informatique & IA">
                         <h3>Informatique & IA</h3>
                         <p>Nos Master Class IA et formations en IT pour rester à la pointe de la tech. Démystifiez l'IA générative.</p>
@@ -61,7 +61,7 @@
                             <li>Délai moyen d'embauche : 3,2 sem.</li>
                         </ul>
                     </div>
-                    <div class="domain-card">
+                    <div class="domain-card" onclick="document.getElementById('hotel-detail').scrollIntoView({behavior: 'smooth'})" style="cursor:pointer;">
                         <img src="domain_hospital.png" class="domain-img" alt="Hôtellerie-Restauration">
                         <h3>Hôtellerie-Restauration</h3>
                         <p>Reprise post-COVID confirmée (+12% d'offres). Formez-vous aux métiers de la salle et de l'accueil.</p>
@@ -70,7 +70,7 @@
                             <li>Pérennité 15 mois : 89,4%</li>
                         </ul>
                     </div>
-                    <div class="domain-card">
+                    <div class="domain-card" onclick="document.getElementById('secu-detail').scrollIntoView({behavior: 'smooth'})" style="cursor:pointer;">
                         <img src="domain_secu.png" class="domain-img" alt="Sécurité Privée">
                         <h3>Sécurité Privée</h3>
                         <p>Répondez aux enjeux des événements internationaux avec une formation de pointe et certifiante.</p>
@@ -82,8 +82,116 @@
                 </div>
             </div>
             
-            <div style="text-align:center; padding-top: 50px;">
-                <a href="contact.html" class="btn btn-primary">Demander le programme complet</a>
+        </section>
+
+        <!-- Section Informatique & IA -->
+        <section class="training-detail-section" id="it-detail">
+            <div class="container">
+                <div class="training-header">
+                    <h2>🤖 Pôle Informatique & Master Class IA</h2>
+                    <p>Maîtrisez les outils de demain pour propulser votre productivité et votre carrière.</p>
+                </div>
+                <div class="training-grid">
+                    <div class="program-box">
+                        <div class="program-module">
+                            <h4>🔸 Master Class IA Générative</h4>
+                            <ul>
+                                <li>Maîtrise du Prompt Engineering avancé (ChatGPT, Claude, Gemini).</li>
+                                <li>Création de visuels et supports avec Midjourney et Canva IA.</li>
+                                <li>Automatisation des workflows avec Make et Zapier.</li>
+                            </ul>
+                        </div>
+                        <div class="program-module">
+                            <h4>🔸 Développement & Solutions Web</h4>
+                            <ul>
+                                <li>Bases du développement Front-end (HTML, CSS, JS).</li>
+                                <li>Gestion de projets et méthodes agiles (Scrum, Kanban).</li>
+                                <li>Utilisation des outils No-Code pour le business.</li>
+                            </ul>
+                        </div>
+                        <div class="program-module">
+                            <h4>🔸 Cybersécurité & Données</h4>
+                            <ul>
+                                <li>Hygiène informatique et protection des données sensibles.</li>
+                                <li>Sensibilisation aux menaces et gestion des accès.</li>
+                                <li>Analyse de données et visualisation stratégique.</li>
+                            </ul>
+                        </div>
+                        <a href="contact.html" class="btn-download">Télécharger le guide IA</a>
+                    </div>
+                    <div class="info-sidebar">
+                        <h4>Fiche Pratique</h4>
+                        <div class="info-item"><span class="info-label">Durée :</span> <span>3 jours à 2 mois</span></div>
+                        <div class="info-item"><span class="info-label">Public :</span> <span>Indépendants, Marketing, IT</span></div>
+                        <div class="info-item"><span class="info-label">Niveau :</span> <span>Certificat de compétences</span></div>
+                        <div class="info-item"><span class="info-label">Financement :</span> <span>CPF, OPCO, Autofinancement</span></div>
+                        <div style="margin-top:30px; padding:15px; background:rgba(255,255,255,0.1); border-radius:8px;">
+                            <p style="font-size:0.85rem;"><strong>Innovation :</strong> Accès à notre bac à sable IA pendant 6 mois après la formation.</p>
+                        </div>
+        <!-- Section Sécurité Privée -->
+        <section class="training-detail-section" id="secu-detail">
+            <div class="container">
+                <div class="training-header">
+                    <h2>🛡️ Pôle Sécurité Privée & Événementiel</h2>
+                    <p>Devenez un maillon essentiel de la sécurité publique en obtenant vos certifications réglementaires.</p>
+                </div>
+                <div class="training-grid">
+                    <div class="program-box">
+                        <div class="program-module">
+                            <h4>🔸 Surveillance & Prévention (TFP APS)</h4>
+                            <ul>
+                                <li>Cadre juridique de la profession et déontologie.</li>
+                                <li>Secours à victimes (SST) et incendie (EPI).</li>
+                                <li>Gestion des conflits et palpations de sécurité.</li>
+                            </ul>
+                        </div>
+                        <div class="program-module">
+                            <h4>🔸 Sécurité Incendie (SSIAP)</h4>
+                            <ul>
+                                <li>Connaissance des systèmes de sécurité incendie.</li>
+                                <li>Réglementation des ERP (Établissements Recevant du Public).</li>
+                                <li>Évacuation et intervention en cas de sinistre.</li>
+                            </ul>
+                        </div>
+                        <div class="program-module">
+                            <h4>🔸 Sécurité Événementielle</h4>
+                            <ul>
+                                <li>Spécificités des grands rassemblements et stades.</li>
+                                <li>Contrôle d'accès et filtrage de masse.</li>
+                                <li>Coordination avec les forces de l'ordre.</li>
+                            </ul>
+                        </div>
+                        <a href="contact.html" class="btn-download">Réserver ma session</a>
+                    </div>
+                    <div class="info-sidebar">
+                        <h4>Fiche Pratique</h4>
+                        <div class="info-item"><span class="info-label">Durée :</span> <span>175 heures (TFP APS)</span></div>
+                        <div class="info-item"><span class="info-label">Public :</span> <span>Tout public (casier vierge requis)</span></div>
+                        <div class="info-item"><span class="info-label">Niveau :</span> <span>CQP reconnu par le CNAPS</span></div>
+                        <div class="info-item"><span class="info-label">Financement :</span> <span>Pôle Emploi, CPF, Entreprises</span></div>
+                        <div style="margin-top:30px; padding:15px; background:rgba(255,255,255,0.1); border-radius:8px;">
+                            <p style="font-size:0.85rem;"><strong>Important :</strong> Nous vous accompagnons dans l'obtention de votre carte professionnelle.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Call to Action -->
+        <section style="text-align:center; padding:100px 0; background:var(--white);">
+            <div class="container">
+                <h2 style="font-size:2.5rem; margin-bottom:20px;">Prêt à donner un nouvel élan à votre carrière ?</h2>
+                <p style="margin-bottom:40px; color:#475569;">Demandez un devis ou une étude de financement personnalisée gratuitement.</p>
+                <div style="display:flex; justify-content:center; gap:20px; flex-wrap:wrap;">
+                    <a href="contact.html" class="btn btn-primary" style="padding:15px 40px; font-size:1.1rem;">S'inscrire à une session</a>
+                    <a href="financements.html" class="btn btn-secondary" style="padding:15px 40px; font-size:1.1rem;">Voir les financements</a>
+                </div>
+            </div>
+        </section>
+
+    </main>                       </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
