@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez les conseillers de Flandre Training pour échanger sur votre projet d'évolution professionnelle ou vos besoins d'entreprise.">
+    <title>Contactez-nous | Flandre Training</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar scrolled" id="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo" style="text-decoration:none;"><img src="logo.jpg" alt="Flandre Training" class="logo-img"></a>
+            <nav aria-label="Menu principal">
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="formations.html">Nos Formations</a></li>
+                    <li><a href="financements.html">Financements</a></li>
+                    <li><a href="a-propos.html">À Propos</a></li>
+                    <li><a href="contact.html" style="color:var(--accent-color);">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main style="padding-top: 100px;">
+        <section class="contact" style="background:var(--primary-color);">
+            <div class="container">
+                <div class="contact-grid" style="grid-template-columns: 1fr 1.2fr;">
+                    <div class="contact-text">
+                        <h2>Prêt à accélérer la transformation de votre carrière ou de vos équipes ?</h2>
+                        <p style="color:#cbd5e1; margin-bottom:30px; font-size:1.1rem;">Contactez nos experts métiers pour un bilan d'orientation pédagogique 100% gratuit.</p>
+                        
+                        <div style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); padding:20px; border-radius:12px;">
+                            <h4 style="color:var(--white); margin-bottom:10px;">En chiffres :</h4>
+                            <ul style="color:#94a3b8; list-style-type:none; padding-left:0; line-height:1.8;">
+                                <li>✓ 18 mois d'accompagnement post-formation</li>
+                                <li>✓ 67% obtiennent une promotion dans les 24 mois</li>
+                                <li>✓ 150 entreprises recrutent avec nous</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <form id="contactForm" aria-label="Formulaire de contact" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                        
+                        <!-- Web3Forms Access Key (Obligatoire) -->
+                        <input type="hidden" name="access_key" value="e4c6eb29-bc78-4560-ba88-c235282e077c">
+                        
+                        <!-- Options Web3Forms -->
+                        <input type="hidden" name="subject" value="Nouveau prospect depuis le site Flandre Training">
+                        <input type="hidden" name="from_name" value="Flandre Training (Site)">
+                        
+                        <!-- (Optionnel) Bloquer les spambots avec un simple honeypot Web3Forms -->
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                        
+                        <div class="form-group">
+                            <label for="name">Nom complet / Entreprise *</label>
+                            <input type="text" id="name" name="Nom" required aria-required="true" placeholder="Ex: Jean Dupont">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Adresse e-mail *</label>
+                            <input type="email" id="email" name="Email" required aria-required="true" placeholder="jean.dupont@entreprise.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Sujet *</label>
+                            <select id="subject" name="Sujet" required aria-required="true">
+                                <option value="">Choisissez une thématique</option>
+                                <option value="Informations générales">Informations générales</option>
+                                <option value="Demande de devis B2B">Demande de devis B2B</option>
+                                <option value="Aide pour Financement/CPF">Aide pour Financement/CPF</option>
+                                <option value="Recherche d'Emploi">Recherche d'Emploi</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Explication de vos besoins *</label>
+                            <textarea id="message" name="Message" rows="4" required aria-required="true" placeholder="Détaillez votre projet..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width:100%; font-size: 1.1rem; padding: 14px;">Envoyer la demande</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" style="background:#0f172a; color:#cbd5e1; padding:60px 0 30px; margin-top:60px;">
+        <div class="container">
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:40px; margin-bottom:40px; text-align:left;">
+                <div>
+                    <h4 style="color:var(--white); margin-bottom:20px; font-size:1.2rem;">Flandre Training</h4>
+                    <p style="font-size:0.95rem; line-height:1.6; margin-bottom:15px;">Votre partenaire d'excellence pour des formations accélérées et certifiantes en entreprise. Organisme certifié Qualiopi.</p>
+                    <p style="font-size:0.95rem;"><strong>NDA :</strong> 11756663575</p>
+                </div>
+                <div>
+                    <h4 style="color:var(--white); margin-bottom:20px; font-size:1.2rem;">Liens Rapides</h4>
+                    <ul style="list-style:none; padding:0; line-height:2.2; font-size:0.95rem;">
+                        <li><a href="formations.html" style="color:#cbd5e1; text-decoration:none;">Nos Formations</a></li>
+                        <li><a href="financements.html" style="color:#cbd5e1; text-decoration:none;">Financements</a></li>
+                        <li><a href="a-propos.html" style="color:#cbd5e1; text-decoration:none;">À Propos de nous</a></li>
+                        <li><a href="contact.html" style="color:#cbd5e1; text-decoration:none;">Contactez-nous</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="color:var(--white); margin-bottom:20px; font-size:1.2rem;">Informations Légales</h4>
+                    <ul style="list-style:none; padding:0; line-height:2.2; font-size:0.95rem;">
+                        <li><a href="mentions-legales.html" style="color:#cbd5e1; text-decoration:none;">Mentions Légales</a></li>
+                        <li><a href="politique-confidentialite.html" style="color:#cbd5e1; text-decoration:none;">Politique de Confidentialité</a></li>
+                        <li><a href="cgv-cgu.html" style="color:#cbd5e1; text-decoration:none;">CGV & CGU</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="color:var(--white); margin-bottom:20px; font-size:1.2rem;">Contact</h4>
+                    <ul style="list-style:none; padding:0; line-height:2.2; font-size:0.95rem;">
+                        <li>📍 11 Rue de Cambrai, 75019 Paris</li>
+                        <li>✉️ Flandre.training@gmail.com</li>
+                        <li style="margin-top:15px;"><a href="contact.html" class="btn btn-primary" style="padding:8px 15px; font-size:0.9rem;">Nous écrire</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div style="border-top:1px solid rgba(255,255,255,0.1); padding-top:20px; text-align:center; font-size:0.85rem; color:#94a3b8;">
+                <p>&copy; 2026 Flandre Training. Organisme certifié. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="app.js"></script>
+</body>
+</html>
