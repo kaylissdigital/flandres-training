@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 </head>
 <body>
 
@@ -23,12 +24,32 @@
                     <li><a href="contact.html" style="color:var(--accent-color);">Contact</a></li>
                 </ul>
             </nav>
+            <div class="nav-actions" style="display:flex; gap:10px; align-items:center;">
+                <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/flandre-training'});return false;" class="btn btn-secondary" style="padding:10px 15px; font-size:0.9rem;">Prendre RDV</a>
+                <a href="contact.html" class="btn btn-primary" style="padding:10px 15px; font-size:0.9rem;">S'inscrire</a>
+            </div>
         </div>
     </header>
 
     <main style="padding-top: 100px;">
         <section class="contact" style="background:var(--primary-color);">
-            <div class="container">
+                <h1 class="section-title" style="color:var(--white); margin-bottom:50px;">Parlons de votre projet</h1>
+                
+                <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:30px; margin-bottom:60px;">
+                    <div style="background:rgba(255,255,255,0.1); backdrop-filter:blur(10px); padding:40px; border-radius:12px; border:1px solid rgba(255,255,255,0.2); text-align:center; color:var(--white);">
+                        <div style="font-size:3rem; margin-bottom:20px;">📅</div>
+                        <h3>Réserver un Audit</h3>
+                        <p style="opacity:0.8; margin-bottom:25px;">Planifiez un appel de 15 min avec un expert pour valider votre projet de formation.</p>
+                        <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/flandre-training'});return false;" class="btn btn-secondary" style="width:100%;">Voir l'agenda</a>
+                    </div>
+                    <div style="background:rgba(255,255,255,0.1); backdrop-filter:blur(10px); padding:40px; border-radius:12px; border:1px solid rgba(255,255,255,0.2); text-align:center; color:var(--white);">
+                        <div style="font-size:3rem; margin-bottom:20px;">📞</div>
+                        <h3>Nous appeler</h3>
+                        <p style="opacity:0.8; margin-bottom:25px;">Une question rapide ? Nos conseillers vous répondent directement du lundi au vendredi.</p>
+                        <p style="font-weight:800; font-size:1.4rem; margin-bottom:0;">01 89 20 XX XX</p>
+                    </div>
+                </div>
+
                 <div class="contact-grid" style="grid-template-columns: 1fr 1.2fr;">
                     <div class="contact-text">
                         <h2>Prêt à accélérer la transformation de votre carrière ou de vos équipes ?</h2>
@@ -126,5 +147,6 @@
     </footer>
     
     <script src="app.js"></script>
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 </body>
 </html>
