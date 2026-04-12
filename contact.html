@@ -32,32 +32,33 @@
     </header>
 
     <main style="padding-top: 100px;">
-        <section class="contact" style="background:var(--primary-color);">
-                <h1 class="section-title" style="color:var(--white); margin-bottom:50px;">Parlons de votre projet</h1>
+        <section style="background:var(--bg-light); padding:100px 0;">
+            <div class="container">
+                <h1 class="section-title" style="color:var(--primary-color); margin-bottom:50px;">Parlons de votre projet</h1>
                 
                 <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:30px; margin-bottom:60px;">
-                    <div style="background:rgba(255,255,255,0.1); backdrop-filter:blur(10px); padding:40px; border-radius:12px; border:1px solid rgba(255,255,255,0.2); text-align:center; color:var(--white);">
+                    <div style="background:var(--white); padding:40px; border-radius:12px; border:1px solid #e2e8f0; text-align:center; box-shadow:0 4px 6px -1px rgba(0,0,0,0.07);">
                         <div style="font-size:3rem; margin-bottom:20px;">📅</div>
-                        <h3>Réserver un Audit</h3>
-                        <p style="opacity:0.8; margin-bottom:25px;">Planifiez un appel de 15 min avec un expert pour valider votre projet de formation.</p>
-                        <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/flandre-training'});return false;" class="btn btn-secondary" style="width:100%;">Voir l'agenda</a>
+                        <h3 style="color:var(--primary-color);">Réserver un Audit</h3>
+                        <p style="color:var(--text-color); margin-bottom:25px;">Planifiez un appel de 15 min avec un expert pour valider votre projet de formation.</p>
+                        <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/flandre-training'});return false;" class="btn btn-primary" style="width:100%;">Voir l'agenda</a>
                     </div>
-                    <div style="background:rgba(255,255,255,0.1); backdrop-filter:blur(10px); padding:40px; border-radius:12px; border:1px solid rgba(255,255,255,0.2); text-align:center; color:var(--white);">
+                    <div style="background:var(--white); padding:40px; border-radius:12px; border:1px solid #e2e8f0; text-align:center; box-shadow:0 4px 6px -1px rgba(0,0,0,0.07);">
                         <div style="font-size:3rem; margin-bottom:20px;">📞</div>
-                        <h3>Nous appeler</h3>
-                        <p style="opacity:0.8; margin-bottom:25px;">Une question rapide ? Nos conseillers vous répondent directement du lundi au vendredi.</p>
-                        <p style="font-weight:800; font-size:1.4rem; margin-bottom:0;">01 89 20 XX XX</p>
+                        <h3 style="color:var(--primary-color);">Nous appeler</h3>
+                        <p style="color:var(--text-color); margin-bottom:25px;">Une question rapide ? Nos conseillers vous répondent directement du lundi au vendredi.</p>
+                        <a href="tel:+33699329794" style="font-weight:800; font-size:1.4rem; color:var(--accent-color); text-decoration:none;">06 99 32 97 94</a>
                     </div>
                 </div>
 
                 <div class="contact-grid" style="grid-template-columns: 1fr 1.2fr;">
                     <div class="contact-text">
-                        <h2>Prêt à accélérer la transformation de votre carrière ou de vos équipes ?</h2>
-                        <p style="color:#cbd5e1; margin-bottom:30px; font-size:1.1rem;">Contactez nos experts métiers pour un bilan d'orientation pédagogique 100% gratuit.</p>
+                        <h2 style="color:var(--primary-color);">Prêt à accélérer la transformation de votre carrière ou de vos équipes ?</h2>
+                        <p style="color:var(--text-color); margin-bottom:30px; font-size:1.1rem;">Contactez nos experts métiers pour un bilan d'orientation pédagogique 100% gratuit.</p>
                         
-                        <div style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); padding:20px; border-radius:12px;">
-                            <h4 style="color:var(--white); margin-bottom:10px;">En chiffres :</h4>
-                            <ul style="color:#94a3b8; list-style-type:none; padding-left:0; line-height:1.8;">
+                        <div style="background:var(--white); border:1px solid #e2e8f0; padding:20px; border-radius:12px; box-shadow:0 2px 4px rgba(0,0,0,0.04);">
+                            <h4 style="color:var(--primary-color); margin-bottom:10px;">En chiffres :</h4>
+                            <ul style="color:var(--text-color); list-style-type:none; padding-left:0; line-height:1.8;">
                                 <li>✓ 18 mois d'accompagnement post-formation</li>
                                 <li>✓ 67% obtiennent une promotion dans les 24 mois</li>
                                 <li>✓ 150 entreprises recrutent avec nous</li>
@@ -65,7 +66,7 @@
                         </div>
                     </div>
                     
-                    <form id="contactForm" aria-label="Formulaire de contact" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                    <form id="contactForm" aria-label="Formulaire de contact" class="contact-form" action="https://api.web3forms.com/submit" method="POST" style="box-shadow:0 10px 25px -5px rgba(0,0,0,0.08); border:1px solid #e2e8f0;">
                         
                         <!-- Web3Forms Access Key (Obligatoire) -->
                         <input type="hidden" name="access_key" value="e4c6eb29-bc78-4560-ba88-c235282e077c">
